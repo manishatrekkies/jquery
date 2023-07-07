@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Care System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/police.png" alt="" /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <h1>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+          similique?
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nemo
+          harum quidem eum vitae, fugiat rerum dicta! Quisquam nostrum doloribus
+          rerum itaque temporibus autem delectus, deserunt fuga consectetur,
+          molestiae nobis, cum repellendus unde inventore sapiente hic amet
+          dolores optio reprehenderit molestias reiciendis ipsum doloremque?
+          Error natus illo ducimus cumque aliquam!
+        </p>
+        <button id="hhh">Click me</button>
+        <a href="">Learn More</a>
+      </div>
+      <form action="">
+        <input type="text" id="name" placeholder="enter your name" />
+        <input type="text" id="password" placeholder="enter your password" />
+      </form>
+
+      <button id="btn1">Hide</button>
+      <button id="btn2">Show</button>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $("input").focus(function () {
+        //   $(this).css("background-color", "aqua");
+        // });
+
+        // $("input").blur(function () {
+        //   $(this).css("background-color", "red");
+        // });
+
+        // $("p").hover(function () {
+        //     alert("hi");
+        //     $("#hhh").hide();
+        //   }, function () {
+        //     $(this).hide();
+        //   }
+        // );
+
+        $("p").on({
+          // mouseenter: function () {
+          //   $(this).hide();
+          // },
+          mousedown: function () {
+            $(this).css("color", "red");
+          },
+          mouseup: function () {
+            alert("welcome visitors");
+          },
+        });
+
+        $("#btn1").click(function () {
+          $("p").toggle(1000); //1000 represents hiding time
+        });
+        $("#btn2").click(function () {
+          $("p").show("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
